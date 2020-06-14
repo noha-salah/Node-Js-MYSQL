@@ -1,0 +1,187 @@
+node Js
+=========================================================
+Api 
+single path
+no process time 
+open source
+
+MIT 
+=======================================================================
+java script 
+command Line
+======================================
+download node Js
+Atom editor 
+===============================================
+
+>>node -v
+>>node global.js
+>>node global
+
+================================================
+to know server-link:
+
+var http=require('http');
+
+http.createServer(function(request,response){
+
+response.writeHead(200, {'content-Type': 'text/plain'})
+response.end("Muhammed Essa \n")
+
+}).listen(8080);
+
+console.log('Server running At http://127.0.0.1:8080');
+====================================================================
+
+const name ='noha';
+console.warn(`my name is : ${name}`);
+
+===================================================================================
+var c=0;
+do{ c++;console.log('count'+c)}while(c<=19);
+==============================================================
+node js package js
+commant line order
+=============================================
+npm install express 
+
+npm uninstall express 
+========================
+npm search express
+==================================
+
+npm modules
+drection for file project
+console.log(__dirname);
+filename 
+console.log(__filename);
+console.log(__filename);
+=====================================
+details for operating system
+
+const os = require('os');
+console.log(os.freemem());
+=================================================
+
+const os = require('os');
+console.log(os.homedir());
+===============================================
+const os = require('os');
+console.log(os.hostname());
+================================================
+
+cpu for your device 
+
+const os = require('os');
+==============================
+const os = require('os');
+console.log(os.loadavg());
+================================
+const os = require('os');
+console.log(os.platform()
+console.log(os.endianness());
+========================================
+const os = require('os');
+console.log(os.release());
+
+https://nodejs.org/api/os.html
+======================================================
+setTimeout(function(){
+    console.log("muhammed Essa");
+},3000);
+
+
+==========================================
+var count1=0;
+console.log(count1);
+
+setInterval(function(){
+    count1++;
+    console.log("muhammed Essa"+ " " +count1 );
+},1000);
+
+https://nodejs.org/api/timers.html
+====================
+
+var recursive=
+function(){
+    console.log("muhammed Essa");
+    setTimeout(recursive,1000);
+}
+recursive();
+========================
+function noha(){
+
+    console.log("noha");
+
+}
+var essa =setTimeout(noha,5000);
+clearTimeout(essa);
+//var hameed =setInterval(noha,1000);
+
+======================================
+error in nodejs
+const fs =require('fs');
+function noha(err,data){
+
+    if (err){
+console.error("there is an  noha error",err);
+return;
+    }
+    console.log(data);
+}
+fs.readFile('/pc/muhamed/Desktop/m.txt',noha);
+
+==========================================
+
+npm install mysql
+
+
+var mysql= require('mysql');
+
+var conn =mysql.createConnection({
+host:'localhost',
+user:'root',
+password:''
+
+
+});
+conn.connect(function(err)
+{
+if(err){
+    throw err;
+}
+console.log('connected ! :) ');
+
+})
+=========================================================
+connect and create database ...........
+
+
+var mysql= require('mysql');
+
+var conn =mysql.createConnection({
+host:'localhost',
+user:'root',
+password:''
+
+
+});
+conn.connect(function(err)
+{
+if(err){
+    throw err;
+}
+console.log('connected ! :) ');
+conn.query("CREATE DATABASE NODE ",function(err,result)
+{
+
+    if(err){
+        throw err;
+    }
+console.log('Created ! :) ');
+});
+
+});
+=============================================================
+
